@@ -1,0 +1,48 @@
+body{
+    background-color: skyblue;
+}
+#truck{
+    position: relative;
+    top:480px;
+    animation: truck-animation 60s linear 1s infinite;
+}
+@keyframes truck-animation {
+    from{transform:translateX(-100px);}
+    to{transform: translateX(100%);}
+}
+.clo{
+    position:absolute;
+    width:300px;
+    height:300px;
+    top:20px;
+    left:35px;
+    animation: clou 50s linear   infinite;
+    z-index: 1;
+}
+@keyframes clou{
+    from{left: -200px;}
+    to{left: 100%;}
+}
+.cloud{
+    position:absolute;
+    width:200px;
+    height:200px;
+    top:35px;
+    right:30px;
+    animation: clouds 50s linear infinite;
+    z-index: 1;
+}
+@keyframes clouds{
+    from{right: -200px;}
+    to{right: 100%;}
+}
+#sun{
+    position:relative;
+    background-color:yellow;
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    top:-200px;
+    left:30px;
+
+}
